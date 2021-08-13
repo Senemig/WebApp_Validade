@@ -1,16 +1,22 @@
+using System;
+
 namespace WebApp_Validade.Models
 {
     public class Produto
     {
-        public string descrição;
-        public string dataValidade;
-        public int quantidade;
+        public string descricao { get; set; }
+        public DateTime data { get; set; }
+        public string dataValidade { get; set; }
+        public int quantidade { get; set; }
+        public string codigo { get; set; }
 
         public Produto()
         {
-            descrição = "";
-            dataValidade = "";
+            descricao = "";
+            data = DateTime.Today;
+            dataValidade = data.ToShortDateString();
             quantidade = 0;
+            codigo = "";
         }
     }
 }

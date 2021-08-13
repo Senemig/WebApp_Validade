@@ -20,17 +20,28 @@ namespace WebApp_Validade.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<Produto> lista = ListaProduto.ListarValidades();
+            return View(lista);
         }
 
         public IActionResult CadastrarValidade()
         {
-            return View("ListaValidades");
+            Produto produto = new Produto();
+            return View("Cadastro", produto);
+        }
+
+        public IActionResult IncluirValidade(Produto produto)
+        {
+            produto.dataValidade = produto.data.ToShortDateString();
+            ListaProduto.AdicionarValidade(produto);
+            List<Produto> lista = ListaProduto.ListarValidades();
+            return View("ListaValidades", lista);
         }
 
         public IActionResult ListaValidades()
         {
-            return View();
+            List<Produto> lista = ListaProduto.ListarValidades();
+            return View(lista);
         }
 
     }

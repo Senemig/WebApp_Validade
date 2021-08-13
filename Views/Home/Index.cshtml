@@ -2,8 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="button-container">
+<div class="my-container">
     <h1 class="display-2">Validades</h1>
-    <button class="btn btn-primary btn-block btn-large">Cadastrar Validade</button>
-    <button class="btn btn-primary btn-block btn-large">Listar Validades</button>
+    <button class="btn btn-primary btn-block btn-large" onclick="location.href='@Url.Action("CadastrarValidade", "Home")'">Cadastrar Validade</button>
+    <button class="btn btn-primary btn-block btn-large" onclick="location.href='@Url.Action("ListaValidades", "Home")'">Listar Validades</button>
 </div>

@@ -33,3 +33,5 @@ C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\WebA
 C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\WebApp_Validade.pdb
 C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\WebApp_Validade.genruntimeconfig.cache
 C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\WebApp_Validade.csproj.CopyComplete
+C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\Razor\Views\Home\Cadastro.cshtml.g.cs
+C:\Users\ferna\Desktop\workspace\C#\WebApp_Validade\obj\Debug\netcoreapp3.1\Razor\Views\Home\ListaValidades.cshtml.g.cs

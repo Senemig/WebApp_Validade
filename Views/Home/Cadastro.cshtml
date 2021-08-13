@@ -1,8 +1,39 @@
 @using WebApp_Validade
 @model Produto
 
-<div class="container">
-    <form class="form-group" asp-action="">
+<div class="my-container">
+    <form asp-action="IncluirValidade" method="POST">
+        <div class="form-group">
+            <p>
+                <label asp-for="codigo">Código</label>
+                <input class="form-control" asp-for="codigo" required/>
+            </p>
+        </div>
+        
+        <div class="form-group">
+            <p>
+                <label asp-for="descricao">Produto</label>
+                <input class="form-control" asp-for="descricao" required/>
+            </p>
+        </div>
+        
+        <div class="form-group">
+            <p>
+                <label asp-for="data">Validade</label>
+                <input type="date" class="form-control" asp-for="data" required/>
+            </p>
+        </div>
+        
+        <div class="form-group">
+            <p>
+                <label asp-for="quantidade">Quantidade</label>
+                <input class="form-control" asp-for="quantidade" />
+            </p>
+        </div>
+
+
+        <input class="btn btn-primary" type="submit" value="Incluir" />
+        <input class="btn btn-warning" type="button" value="Voltar" onclick="location.href='@Url.Action("Index", "Home")'" />
 
     </form>
 </div>

@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ferna\\Desktop\\workspace\\C#\\WebApp_Validade\\Views\\Home\\ListaValidades.cshtml",
+      "TargetPath": "Views\\Home\\ListaValidades.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ferna\\Desktop\\workspace\\C#\\WebApp_Validade\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

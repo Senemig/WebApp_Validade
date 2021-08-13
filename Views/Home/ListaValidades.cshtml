@@ -1,0 +1,31 @@
+@using WebApp_Validade
+@model List<Produto>
+
+<div class="my-container">
+    <table class="table text-center table-bordered">
+        <thead class="thead-dark">
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Validade</th>
+            <th>Quantidade</th>
+        </thead>
+
+        <tbody>
+
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].codigo</td>
+                    <td>@Model[i].descricao</td>
+                    <td>@Model[i].dataValidade</td>
+                    <td>@Model[i].quantidade</td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+    <input class="btn btn-warning" type="button" value="Voltar" onclick="location.href='@Url.Action("Index", "Home")'" />
+    
+</div>
