@@ -1,0 +1,15 @@
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container button{
+    margin:auto;
+}
+
+.btn-large{
+    font-size: 50px;
+}
